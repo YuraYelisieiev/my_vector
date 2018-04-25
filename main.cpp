@@ -125,10 +125,9 @@ void myvector<T>::resize(int new_size){
     for (int i = 0; i < vsize; i++){
         temp[i] = array[i];
     }
-    array = temp;
     delete[] array;
     array = temp;
-    delete[] temp;
+    temp = NULL;
 }
 
 
