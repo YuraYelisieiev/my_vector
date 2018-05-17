@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 project(Vector)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
-add_executable(Vector ${SOURCE_FILES})
+add_executable(Vector main.cpp myvector.h myvector_impl.h memory_handle_impl.h memory_handle.h)
